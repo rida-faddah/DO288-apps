@@ -1,5 +1,5 @@
-FROM registry.ocp4.example.com:8443/ubi8/python-39
-
+#FROM registry.ocp4.example.com:8443/ubi8/python-39
+FROM  registry.redhat.io/ubi8/python-311:latest
 # By default, listen on port 8081
 EXPOSE 8081/tcp
 ENV FLASK_PORT=8081
